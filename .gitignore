@@ -1,0 +1,7 @@
+*.hcl
+*.tfstate
+*.backup
+*.save
+*.terraform
+script.sh
+variable.tf
