@@ -11,7 +11,7 @@ pipeline {
     }
 
     stages {
-        stage("Create an Cluster") {
+        stage("Create an EKS Cluster") {
             when {
                 expression { params.ENVIRONMENT == 'create' }
             }
@@ -25,7 +25,7 @@ pipeline {
             }
         }
 
-        stage("destroy an Cluster") {
+        stage("destroy an EKS Cluster") {
             when {
                 expression { params.ENVIRONMENT == 'destroy' }
             }
