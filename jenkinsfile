@@ -43,7 +43,7 @@ pipeline {
             steps {
                 script {
                     dir('sock-shop') {
-                        sh "kubectl apply -f complete-deployment.yaml"
+                        sh "kubectl apply -f microservice.yaml"
                     }
                 }
             }
